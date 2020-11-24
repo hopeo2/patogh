@@ -1,0 +1,36 @@
+<h3>ویرایش مطلب</h3>
+<div class="row">
+    <form action="/stories/{{story._id}}" method="POST" class="col s12">
+        <input type="hidden" name="_method" value="PUT">
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="title" name="title" value="{{story.title}}">
+                <label for="title">عنوان</label>
+            </div>
+        </div>
+
+        <div dir="ltr" class="row">
+            <div class="input-field">
+                <select id="status" name="status">
+                    {{#select story.status}}
+                    <option value="public" selected>عمومی</option>
+                    <option value="private">خصوصی</option>
+                    {{/select}}
+                </select>
+                <label for="status">وضعیت</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <h5>مطلب خود را بارگذاری کنید</h5>
+                <textarea id="body" name="body">{{story.body}}</textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="submit" value="ذخیره" class="btn">
+            <a href="/dashboard" class="btn orange">بیخیال</a>
+        </div>
+    </form>
+</div>

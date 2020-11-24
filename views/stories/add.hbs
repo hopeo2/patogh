@@ -1,0 +1,33 @@
+<h3>اضافه کردن مطلب</h3>
+<div class="row">
+    <form action="/stories" method="POST" class="col s12">
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="title" name="title">
+                <label for="title">عنوان</label>
+            </div>
+        </div>
+
+        <div class="row" dir="ltr">
+            <div class="input-field">
+                <select id="status" name="status">
+                    <option value="public" selected>عمومی</option>
+                    <option value="private">خصوصی</option>
+                </select>
+                <label for="status">وضعیت</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field">
+                <h5>متن مطلب :</h5>
+                <textarea id="body" name="body"></textarea>
+            </div>
+        </div>
+
+        <div class="row">
+            <input type="submit" value="ذخیره" class="btn">
+            <a href="/dashboard" class="btn orange">بیخیال</a>
+        </div>
+    </form>
+</div>

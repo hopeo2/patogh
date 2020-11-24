@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "lalezar, regular";
+    src: url('../fonts/Lalezar-Regular.otf');
+    src: url('../fonts/Lalezar-Regular.ttf');
+}
+* {
+    font-family: "lalezar, regular";
+}
+p {
+    margin: 10px 0 !important;
+}
+.login-container {
+    width: 100%;
+    margin-top: 140px;
+    text-align: center;
+}
+.patogh {
+    color: #2188E5;
+    border-bottom: 1px solid rgba(33, 136, 229, 0.425);
+}
+.h-pro {
+    border-bottom: 1px solid rgba(33, 136, 229, 0.425);
+    color: #2188E5;
+    font-size: 18px;
+}
+.creat {
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-login {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+.fa-small {
+    font-size: 18px !important;
+}
+.btn-float {
+    float: left;
+    margin-right: 10px;
+}
