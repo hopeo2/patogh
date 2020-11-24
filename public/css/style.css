@@ -41,3 +41,18 @@ p {
     float: left;
     margin-right: 10px;
 }
+@media screen and (max-width: 600px) {
+    .fixed-action-btn {
+      right: 284px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .fixed-action-btn {
+        right: 1200px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 1200px)  {
+    .fixed-action-btn {
+        right: 800px;
+    }
+}
